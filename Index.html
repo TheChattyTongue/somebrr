@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Request</title>
+  </head>
+  <body class="body">
+    <main class="main">
+      <div class="container">
+        <div class="container__left-side">
+          <div>
+            <h1 class="container__heading">SEND<br />A REQUEST</h1>
+            <h3 class="container__subheading">
+              Leave your contacts and we will contact you as soon as possible
+            </h3>
+            <img class="logo" src="img/logo.png" alt="Логотип" />
+          </div>
+        </div>
+        <div class="container__right-side">
+          <form class="container__form" id="form">
+            <label for="name">Name</label>
+            <input class="container__input" type="text" id="name" required />
+
+            <label for="phone">Phone</label>
+            <input
+              class="container__input"
+              type="tel"
+              id="phone"
+              pattern="^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$"
+              required
+            />
+
+            <label for="temp">Temp</label>
+            <div class="temp-input-container">
+              <input
+                class="container__input temp-input"
+                type="range"
+                id="temp"
+                min="1"
+                max="100"
+              />
+              <div class="temp-labels">
+                <span>HOT</span>
+                <span>COLD</span>
+              </div>
+            </div>
+
+            <label for="comments">Comments</label>
+            <input
+              class="container__input last-input"
+              type="text"
+              id="comments"
+              required
+            />
+
+            <div class="form-footer">
+              <button type="submit" class="submit-button">Call Me</button>
+              <p class="agree-info">
+                By pressing “Send” button I agree with
+                <a href="#">Privacy Policy</a>
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="privacy-info">
+        <p class="copyright">© 2022 LUXURY RESIDENCE</p>
+        <button class="policy"><a href="">Privacy Policy</a></button>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,494 @@
+@font-face {
+  font-family: "GheagRapalat";
+  src: url("fonts/gheagrapalat.otf") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GheagMariam";
+  src: url("fonts/gheamariam.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.body {
+  margin: 0;
+  padding: 0;
+  font-family: "GheagRapalat", sans-serif;
+  text-transform: uppercase;
+  background-color: #21354b;
+  color: #eeebe6;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 86px;
+  padding-right: 472px;
+}
+
+.container__left-side {
+  max-width: 563px;
+  padding-top: 56px;
+  margin-bottom: 330px;
+}
+
+.container__heading {
+  font-family: "GheagMariam", sans-serif;
+  max-width: 383px;
+  font-size: 66px;
+  line-height: 1.1;
+  margin: 0;
+  margin-bottom: 54px;
+}
+
+.container__subheading {
+  max-width: 180px;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.logo {
+  display: inline-block;
+  margin-top: 97px;
+}
+
+.privacy-info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 86px;
+  padding-right: 86px;
+  margin-bottom: 90px;
+}
+
+.copyright {
+  color: #ff69b4;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.policy {
+  font-size: 12px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  padding-left: 208px;
+  background-color: inherit;
+  color: inherit;
+  border: none;
+}
+
+.policy a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container__right-side {
+  align-self: center;
+}
+
+.container__form {
+  width: 538px;
+  color: #eeebe6;
+}
+
+.container__form label {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.container__input {
+  display: block;
+  color: inherit;
+  width: 100%;
+  height: 20px;
+  padding: 0;
+  margin-bottom: 51px;
+  border: none;
+  border-bottom: 1px solid #eeebe6;
+  outline: none;
+  background-color: inherit;
+}
+
+.last-input {
+  margin-bottom: 136px;
+}
+
+.temp-labels {
+  display: flex;
+  font-size: 9px;
+  line-height: 1.5;
+  justify-content: space-between;
+  margin-top: 6px;
+}
+
+.temp-input-container {
+  margin-bottom: 31px;
+}
+
+.temp-input {
+  margin: 0;
+  margin-top: 20px;
+  -webkit-appearance: none;
+  outline: none;
+  height: 1px;
+  border: none;
+  background: linear-gradient(
+    to right,
+    #ff69b4 0%,
+    #ff69b4 50%,
+    #5baaf9 50%,
+    #5baaf9 100%
+  );
+}
+
+.temp-input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 13px;
+  height: 13px;
+  background: #b6a16b;
+  cursor: pointer;
+  border-radius: 50%;
+  position: relative;
+  z-index: 1;
+}
+
+.temp-input::-moz-range-thumb {
+  width: 13px;
+  height: 13px;
+  background: #b6a16b;
+  cursor: pointer;
+  border-radius: 50%;
+  position: relative;
+  z-index: 1;
+}
+
+.temp-input::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 15px;
+  cursor: pointer;
+  background: transparent;
+  border-radius: 10px;
+}
+
+.temp-input::-moz-range-track {
+  width: 100%;
+  height: 15px;
+  cursor: pointer;
+  background: transparent;
+  border-radius: 10px;
+}
+
+.temp-input::-ms-track {
+  width: 100%;
+  height: 15px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+.form-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.submit-button {
+  text-transform: uppercase;
+  padding: 21px 60px;
+  font-size: 12px;
+  line-height: 1.3;
+  border: 1px solid #eeebe6;
+  border-radius: 100px;
+  background-color: inherit;
+  color: inherit;
+}
+
+.submit-button:hover {
+  cursor: pointer;
+}
+
+.agree-info {
+  max-width: 190px;
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.5;
+  padding-right: 88px;
+}
+
+.agree-info a {
+  color: #ff69b4;
+  text-decoration: underline;
+  text-decoration-color: #ff69b4;
+}
+
+@media (max-width: 1600px) {
+  .container {
+    padding-right: 140px;
+  }
+
+  .privacy-info {
+    padding-left: 86px;
+    padding-right: 86px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    padding-right: 100px;
+  }
+
+  .privacy-info {
+    padding-left: 86px;
+    padding-right: 86px;
+  }
+
+  .policy {
+    padding-left: 104px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+  .container__left-side {
+    margin-bottom: 140px;
+  }
+
+  .container__heading {
+    margin-bottom: 40px;
+  }
+
+  .logo {
+    margin-top: 40px;
+  }
+
+  .privacy-info {
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 35px;
+  }
+
+  .policy {
+    padding-left: 104px;
+  }
+
+  .container__form {
+    max-width: 400px;
+    padding-top: 56px;
+  }
+
+  .last-input {
+    margin-bottom: 51px;
+  }
+
+  .submit-button {
+    padding: 15px 40px; /* Занимает всю ширину */
+    margin-top: 0; /* Увеличиваем отступ сверху у кнопки */
+  }
+
+  .agree-info {
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    padding-right: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: auto;
+  }
+
+  .container__left-side,
+  .container__right-side {
+    max-width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .container__left-side {
+    margin-bottom: 0;
+  }
+
+  .container__heading {
+    font-size: 50px;
+    margin-bottom: 20px; /* Уменьшаем отступ у заголовка */
+    text-align: center; /* Выравниваем заголовок по центру */
+  }
+
+  .container__subheading {
+    max-width: 289px;
+    font-size: 12px;
+    text-align: center; /* Выравниваем подзаголовок по центру */
+  }
+
+  .logo {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+  .container__input {
+    margin-bottom: 30px;
+  }
+
+  .temp-input {
+    margin-bottom: 0;
+  }
+
+  .temp-input-container {
+    margin-bottom: 10px; /* Уменьшаем отступ снизу у контейнера temp-input */
+  }
+
+  .form-footer {
+    flex-direction: column; /* Размещаем элементы формы в столбец */
+    align-items: center; /* Выравниваем элементы по центру */
+  }
+
+  .last-input {
+    margin-bottom: 30px;
+  }
+
+  .submit-button {
+    width: 50%; /* Занимает всю ширину */
+    margin-top: 0; /* Увеличиваем отступ сверху у кнопки */
+  }
+
+  .agree-info {
+    font-size: 11px;
+    text-align: center; /* Выравниваем текст по центру */
+    margin-top: 10px; /* Увеличиваем отступ сверху */
+    padding: 0;
+  }
+
+  .privacy-info {
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .container__heading {
+    font-size: 40px;
+  }
+
+  .container__subheading {
+    font-size: 10px;
+  }
+
+  .container__form label {
+    font-size: 12px;
+  }
+
+  .container__input {
+    margin-bottom: 15px;
+  }
+
+  .last-input {
+    margin-bottom: 30px;
+  }
+
+  .submit-button {
+    padding: 8px 15px;
+  }
+
+  .agree-info {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .container__heading {
+    font-size: 30px;
+  }
+
+  .container__subheading {
+    font-size: 8px;
+  }
+
+  .container__right-side {
+    padding: 0;
+  }
+
+  .container__form {
+    max-width: 300px;
+    padding-top: 40px;
+  }
+
+  .container__form label {
+    font-size: 10px;
+  }
+
+  .container__input {
+    margin-bottom: 10px;
+  }
+
+  .last-input {
+    margin-bottom: 20px;
+  }
+
+  .temp-labels {
+    margin-top: 3px;
+    font-size: 6px;
+  }
+
+  .temp-input {
+    margin-bottom: 0;
+  }
+
+  .submit-button {
+    padding: 5px 10px;
+  }
+
+  .privacy-info {
+    margin-bottom: 10px;
+    justify-content: space-between;
+  }
+
+  .copyright {
+    font-size: 9px;
+  }
+
+  .policy {
+    font-size: 9px;
+    padding: 0;
+  }
+
+  .agree-info {
+    font-size: 9px;
+    margin-bottom: 20px;
+  }
+
+  .logo {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+}
